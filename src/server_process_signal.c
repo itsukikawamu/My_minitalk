@@ -6,7 +6,7 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 03:43:54 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/06/18 20:51:21 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/06/21 02:16:55 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	process_signal(void)
 		char_cnt = 0;
 		bit_cnt = 0;
 	}
+	g_cli.continued = 1;
 	buf[char_cnt] = process_bit(buf[char_cnt]);
 	bit_cnt++;
 	if (bit_cnt == 8)

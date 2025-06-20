@@ -6,7 +6,7 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 02:00:50 by ikawamuk          #+#    #+#             */
-/*   Updated: 2025/06/18 20:58:15 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2025/06/21 02:16:13 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static void	wait_client(void)
 			usleep(200);
 		if (g_cli.sig == 0)
 		{
-			ft_printf("\n[ERROR]Server PID: %d doesn't respond.\n", g_cli.pid);
+			ft_printf("\n[ERROR]Client PID: %d doesn't respond.\n", g_cli.pid);
 			g_cli.continued = 0;
 		}
 	}
